@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NetworkOtomotiv</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Trator</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="~/template/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="~/template/css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="~/template/css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- font css -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="~/template/css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    @*----navbar---*@
+    <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    @*----navbar---*@
+</head>
+<body>
+
+    <header>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <div id="flipkart-navbar">
+            <div class="container">
+                <div class="row row1">
+                    <ul class="largenav pull-right">
+                        <li class="upper-links"><a class="links" asp-controller="Home" asp-action="Index"> Home </a></li>
+                        <li class="upper-links"><a class="links" asp-controller="Home" asp-action="List"> Liste </a></li>
+                        <li class="upper-links"><a class="links" asp-controller="Home" asp-action="Contact"> İletişim </a></li>
+                        <li class="upper-links">
+                            <a class="links" href="http://clashhacks.in/">
+                                <svg class="" width="16px" height="12px" style="overflow: visible;">
+                                    <path d="M8.037 17.546c1.487 0 2.417-.93 2.417-2.417H5.62c0 1.486.93 2.415 2.417 2.415m5.315-6.463v-2.97h-.005c-.044-3.266-1.67-5.46-4.337-5.98v-.81C9.01.622 8.436.05 7.735.05 7.033.05 6.46.624 6.46 1.325v.808c-2.667.52-4.294 2.716-4.338 5.98h-.005v2.972l-1.843 1.42v1.376h14.92v-1.375l-1.842-1.42z" fill="#fff"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="upper-links dropdown">
+                            <a class="links" href="http://clashhacks.in/">Dropdown</a>
+                            <ul class="dropdown-menu">
+                                <li class="profile-li"><a class="profile-links" href="http://yazilife.com/">Link</a></li>
+                                <li class="profile-li"><a class="profile-links" href="http://hacksociety.tech/">Link</a></li>
+                                <li class="profile-li"><a class="profile-links" href="http://clashhacks.in/">Link</a></li>
+                                <li class="profile-li"><a class="profile-links" href="http://clashhacks.in/">Link</a></li>
+                                <li class="profile-li"><a class="profile-links" href="http://clashhacks.in/">Link</a></li>
+                                <li class="profile-li"><a class="profile-links" href="http://clashhacks.in/">Link</a></li>
+                                <li class="profile-li"><a class="profile-links" href="http://clashhacks.in/">Link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row row2">
+                    <div class="col-sm-2">
+                        <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ NetOTO</span></h2>
+                        <h1 style="margin:0px;"><span class="largenav">NetOTO</span></h1>
+                    </div>
+                    <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
+                        <div class="row">
+                            <input class="flipkart-navbar-input col-xs-11" type="" placeholder="Search for Products, Brands and more" name="">
+                            <button class="flipkart-navbar-button col-xs-1">
+                                <svg width="15px" height="15px">
+                                    <path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="container" style="background-color: #2874f0; padding-top: 10px;">
+                <span class="sidenav-heading">Home</span>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            </div>
+            <a href="http://clashhacks.in/">Link</a>
+            <a href="http://clashhacks.in/">Link</a>
+            <a href="http://clashhacks.in/">Link</a>
+            <a href="http://clashhacks.in/">Link</a>
+        </div>
+
+
+
+
+      @*  <div class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html"><img src="~/template/images/logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" asp-controller="Home" asp-action="List">Liste</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" asp-controller="Home" asp-action="List">İletişim</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>*@
+
+
+        @* <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">NetworkOtomotiv</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1">
+        <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Home" asp-action="List">Liste</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="BodyType" asp-action="Index">BodyTypes</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Brand" asp-action="Index">Brand</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Car" asp-action="Index">Car</a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </nav>*@
+    </header>
+    <div class="primary">
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <!-- contact section end -->
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footeer_logo"><img src="images/logo.png"></div>
+                </div>
+            </div>
+            <div class="footer_section_2">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="footer_taital">Subscribe Now</h4>
+                        <p class="footer_text">There are many variations of passages of Lorem Ipsum available,</p>
+                        <div class="form-group">
+                            <textarea class="update_mail" placeholder="Enter Your Email" rows="5" id="comment" name="Enter Your Email"></textarea>
+                            <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h4 class="footer_taital">Information</h4>
+                        <p class="lorem_text">There are many variations of passages of Lorem Ipsum available, but the majority </p>
+                    </div>
+                    <div class="col">
+                        <h4 class="footer_taital">Helpful Links</h4>
+                        <p class="lorem_text">There are many variations of passages of Lorem Ipsum available, but the majority </p>
+                    </div>
+                    <div class="col">
+                        <h4 class="footer_taital">Invesments</h4>
+                        <p class="lorem_text">There are many variations of passages of Lorem Ipsum available, but the majority </p>
+                    </div>
+                    <div class="col">
+                        <h4 class="footer_taital">Contact Us</h4>
+                        <div class="location_text"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_15">Location</span></a></div>
+                        <div class="location_text"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_15">(+71) 8522369417</span></a></div>
+                        <div class="location_text"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_15">demo@gmail.com</span></a></div>
+                        <div class="social_icon">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="copyright_text">2023 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @*<footer class="border-top footer text-muted">
+    <div class="container">
+    &copy; 2023 - NetworkOtomotiv - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+    </footer>*@
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dtHorizontalExample').DataTable({
+                "scrollX": true
+            });
+            $('.dataTables_length').addClass('bs-select');
+        });
+
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+    <script src="~/template/js/jquery.min.js"></script>
+    <script src="~/template/js/popper.min.js"></script>
+    <script src="~/template/js/bootstrap.bundle.min.js"></script>
+    <script src="~/template/js/jquery-3.0.0.min.js"></script>
+    <script src="~/template/js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="~/template/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/template/js/custom.js"></script>
+    
+    @*-----navbar-------*@
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "70%";
+            // document.getElementById("flipkart-navbar").style.width = "50%";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "rgba(0,0,0,0)";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+﻿@model NetworkOtomotiv.Entity.Model.Entity.Car
+
+@{
+    ViewData["Title"] = "Araba Ekle";
+}
+
+<h1>Araba ekle</h1>
+
+<h4>Araba</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label">Marka</label>
+                <select asp-for="BrandId" class ="form-control" asp-items="ViewBag.Brand"></select>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Kategori</label>
+                <select asp-for="BodyTypeId" class ="form-control" asp-items="ViewBag.BodyType"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Image" class="control-label"></label>
+                <input asp-for="Image" type="file" class="form-control" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Seri" class="control-label"></label>
+                <input asp-for="Seri" class="form-control" />
+                <span asp-validation-for="Seri" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Model" class="control-label"></label>
+                <input asp-for="Model" class="form-control" />
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Yakit" class="control-label"></label>
+                <input asp-for="Yakit" class="form-control" />
+                <span asp-validation-for="Yakit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Vites" class="control-label"></label>
+                <input asp-for="Vites" class="form-control" />
+                <span asp-validation-for="Vites" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Color" class="control-label"></label>
+                <input asp-for="Color" class="form-control" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="City" class="control-label"></label>
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Garanti" /> @Html.DisplayNameFor(model => model.Garanti)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="HasarKaydi" /> @Html.DisplayNameFor(model => model.HasarKaydi)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Plaka" /> @Html.DisplayNameFor(model => model.Plaka)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Km" class="control-label"></label>
+                <input asp-for="Km" class="form-control" />
+                <span asp-validation-for="Km" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsHome" /> @Html.DisplayNameFor(model => model.IsHome)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreateDate" class="control-label"></label>
+                <input asp-for="CreateDate" class="form-control" />
+                <span asp-validation-for="CreateDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Listeye Dön</a>
+</div>
+

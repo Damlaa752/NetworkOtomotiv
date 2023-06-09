@@ -1,0 +1,28 @@
+﻿@model IEnumerable<NetworkOtomotiv.Entity.Model.Entity.Car>
+@{
+    ViewData["Title"] = "Index";
+}
+@foreach (var carCart in Model)
+{
+    <div class="col-md-4">
+        <div class="card rounded">
+            <div class="card-image">
+                @*<span class="card-notify-badge"> @carCart.Durum </span>*@
+                <span class="card-notify-year">@carCart.Color</span>
+                <img class="img-fluid" src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USC80HOC011A021001.jpg&width=440&height=262" alt="Alternate Text" />
+            </div>
+            <div class="card-image-overlay m-auto">
+                <span class="card-detail-badge">@carCart.City</span>
+                <span class="card-detail-badge">@carCart.Price</span>
+                <span class="card-detail-badge">@carCart.Km</span>
+            </div>
+            <div class="card-body text-center">
+                <div class="ad-title m-auto">
+                  @*  <h5>@carCart.Brand, @carCart.BodyType</h5>*@
+                </div>
+                <a class="ad-btn" asp-action="Details">@carCart.Description</a>
+            </div>
+        </div>
+    </div>
+}
+
